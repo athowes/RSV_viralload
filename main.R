@@ -3,10 +3,10 @@
 set.seed(123)
 
 ##---- Load functions
-source('code/helper.r')
+source('helper.r')
 
 ##---- Load data
-load('combined_data/data_viralload_2020-12-21.Rdata')
+load('data_viralload_2020-12-21.Rdata')
 
 datas$SW = 0*datas$CS
 for(i in 1:dim(datas$SW)[1]){for(j in 1:dim(datas$SW)[2]){if(datas$VLs[i,j]>1)datas$SW[i,j]=1}}
