@@ -90,3 +90,9 @@ for (iteration in 1:MCMCITS)
 }
 
 saveRDS(storage, file = paste0("storage", Sys.Date(), ".rds"))
+
+ggplot2::qplot(storage$logmu)
+ggsave("logmu.png")
+
+ggplot2::qplot(storage$logsd)
+ggsave("logsd.png")
