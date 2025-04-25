@@ -88,3 +88,5 @@ for (iteration in 1:MCMCITS)
   storage$logsd[iteration] = pars$logsd
   storage$LL[iteration] = pars$LL
 }
+
+saveRDS(storage, file = paste0("storage", Sys.Date(), ".rds"))
