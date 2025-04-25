@@ -96,3 +96,6 @@ ggsave("logmu.png")
 
 ggplot2::qplot(storage$logsd)
 ggsave("logsd.png")
+
+summary(storage$logmu)
+summary(storage$logsd)
